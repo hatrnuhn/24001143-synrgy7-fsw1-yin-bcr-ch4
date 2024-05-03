@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binar Car Rental</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  </head>
+  <body>
+    <section class="hero w-full box-border bg-bcr-lighterblue flex flex-col justify-between overflow-x-clip sm:flex-row">
+        <nav class="hero__nav w-full flex justify-center items-end sm:absolute">
+            <div class="hero__nav-container flex items-center justify-between w-91prcnt sm:w-81prcnt">
+                <div class="bcr-logo bg-bcr-blue"></div>
+                <ul class="hero__menu-list hidden items-center h-full justify-end sm:flex">
+                    <li>
+                        <a href="#">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Why Us?</a>
+                    </li>
+                    <li>
+                        <a href="#">Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="button bg-bcr-limegreen self-start" type="button">Register</button>
+                        </a>
+                    </li>
+                </ul>
+                <button class="hero__nav-menu-icon sm:hidden" type="button" onclick="openNav()"></button>
+                <div id="hero__side-nav" class="fixed top-0 right-0 h-full w-0 z-10 flex flex-col gap-4 items-center bg-white sm:hidden">
+                    <h2 class="flex w-3/4 justify-between items-center mt-8">
+                        BCR
+                        <a href="javascript:void(0)" class="closebtn text-4xl" onclick="closeNav()">&times;</a>
+                    </h2>
+                    <ul class="flex w-3/4 flex-col gap-4">
+                        <li>
+                            <a href="#">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Why Us?</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button class="button bg-bcr-limegreen self-start" type="button">Register</button>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </nav>
+        <div class="hero__content flex flex-col justify-center items-center gap-4 mt-8 sm:items-start sm:justify-end sm:mt-24">
+            <div class="hero__text-container flex flex-col w-91prcnt gap-4">
+                <h1 class="w-full flex items-center sm:w-full">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+                <p class="w-full flex items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic architecto nostrum consequatur! Dicta error ipsam perferendis quos hic nostrum?</p>    
+            </div>
+    
+            <div class="w-91prcnt sm:w-full">
+                <button class="button bg-bcr-limegreen self-start" type="button"><a href="/search">Mulai Sewa Mobil</a></button>
+            </div>    
+        </div>
+
+
+        <div class="hero__img-container mt-6 flex justify-center items-end sm:w-half sm:mt-24 sm:self-end">
+            <div class="hero__img-bg bg-bcr-blue flex justify-center">
+                <div class="hero__img-png self-end"></div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="services flex w-screen justify-center">
+        <div class="services__content w-full flex flex-col justify-start items-center gap-6 sm:flex-row sm:gap-0 sm:w-71prcnt">
+            <div class="services__img-container w-full flex justify-center">
+                <div class="services__img self-center"></div>
+            </div>
+            <div class="services__text-container flex flex-col justify-start gap-4 w-91prcnt sm:w-81prcnt lg:w-full lg:justify-center">
+                <h2>Best car rental for any kind of trip in (Lokasimu)!</h2>
+                <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental, dijamin harga lebih murah dibandingkan yang lain! Kondisi mobil baru serta kualitas pelayanan yang terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dan lain-lain!</p>
+                <ul class="flex flex-col gap-4">
+                    <li class="flex items-center gap-4">
+                        <div class="services__tick-container bg-bcr-slighterlightblue rounded-full flex justify-center items-center">
+                            <div class="svg tick-icon bg-bcr-blue"></div>
+                        </div>
+                        <p>Sewa mobil dengan supir di Bali 12 jam</p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div class="services__tick-container bg-bcr-slighterlightblue rounded-full flex justify-center items-center">
+                            <div class="svg tick-icon bg-bcr-blue"></div>
+                        </div>
+                        <p>Sewa mobil lepas kunci di Bali 24 jam</p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div class="services__tick-container bg-bcr-slighterlightblue rounded-full flex justify-center items-center">
+                            <div class="svg tick-icon bg-bcr-blue"></div>
+                        </div>
+                        <p>Sewa mobil jangka panjang bulanan</p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div class="services__tick-container bg-bcr-slighterlightblue rounded-full flex justify-center items-center">
+                            <div class="svg tick-icon bg-bcr-blue"></div>
+                        </div>
+                        <p>Gratis antar-jemput di bandara</p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div class="services__tick-container bg-bcr-slighterlightblue rounded-full flex justify-center items-center">
+                            <div class="svg tick-icon bg-bcr-blue"></div>
+                        </div>
+                        <p>Layanan airport transport / drop in-out</p>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+    </section>
+
+    <section class="why w-screen flex justify-center">
+        <div class="why__content w-91prcnt flex flex-col justify-between gap-6 sm:w-81prcnt">
+            <div class="why__head w-full flex flex-col items-center justify-center gap-4 sm:items-start">
+                <h2>Why Us?</h2>
+                <p>Kenapa harus Binar Car Rental?</p>
+            </div>
+
+            <div class="why__items-container flex flex-col justify-between gap-4 sm:flex-row">
+                <div class="why__items flex flex-col justify-start border border-bcr-neutral02 p-6 gap-4 rounded-lg">
+                    <div class="why__icon bg-bcr-warning flex justify-center items-center rounded-full self-start">
+                        <div class="thumb-icon icon--20px svg bg-white"></div>
+                    </div>
+                    <h3>Mobil Lengkap</h3>
+                    <p>Ada banyak pililihan mobil yang pastinya masih baru, bersih dan terawat!</p>
+                </div>
+
+                <div class="why__items flex flex-col justify-start border border-bcr-neutral02 p-6 gap-4 rounded-lg">
+                    <div class="why__icon bg-bcr-danger flex justify-center items-center rounded-full self-start">
+                        <div class="tag-icon icon--20px svg bg-white"></div>
+                    </div>
+                    <h3>Harga Murah dan Bersaing</h3>
+                    <p>Tentu bisa dibandingkan dengan rental mobil lain.</p>
+                </div>
+                
+                <div class="why__items flex flex-col justify-start border border-bcr-neutral02 p-6 gap-4 rounded-lg">
+                    <div class="why__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="clock-icon icon--20px svg bg-white"></div>
+                    </div>
+                    <h3>Layanan 24 Jam</h3>
+                    <p>Siap melayani kamu kapanpun kamu butuh. Kami juga tersedia selama week-end, lho!</p>
+                </div>
+                
+                <div class="why__items flex flex-col justify-start border border-bcr-neutral02 p-6 gap-4 rounded-lg">
+                    <div class="why__icon bg-bcr-limegreen flex justify-center items-center rounded-full self-start">
+                        <div class="medal-icon icon--20px svg bg-white"></div>
+                    </div>
+                    <h3>Sopir Profesional</h3>
+                    <p>Dan tentunya berpengalaman, jujur, ramah, selalu tepat waktu, dan keren.😎</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testy w-screen flex justify-center">
+        <div class="testy__content w-91prcnt flex flex-col gap-4 justify-between sm:gap-0 sm:w-full sm:items-center overflow-x-clip">
+            <h2 class="flex justify-center">What Do They Say?</h2>
+            <p class="flex justify-center text-center sm:mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rem saepe.</p>
+            <div class="testy__review-container sm:mt-10 sm:flex sm:justify-center sm:w-130vw">
+                <div class="my-slider flex">
+                    <div class="slider-item">
+                        <div class="flex flex-col gap-6 py-10 px-8 rounded-lg bg-bcr-lighterblue sm:flex-row sm:justify-center sm:gap-0">
+                            <div class="flex justify-center items-center w-full">
+                                <div class="joe-swanson-img testy__img rounded-full"></div>
+                            </div>
+                            <div class="flex flex-col gap-6 sm:gap-2">
+                                <div class="testy__stars flex justify-center sm:justify-start">
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--empty bg-bcr-warning"></div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ex laudantium exercitationem quos maxime repellat libero, facilis dicta est, excepturi laboriosam facere recusandae debitis delectus in expedita voluptates explicabo maiores ea natus? Reiciendis?</p>
+                                    <p class="font-semibold">Joe Swanson 40, Quahog</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="flex flex-col gap-6 py-10 px-8 rounded-lg bg-bcr-lighterblue sm:flex-row sm:justify-center sm:gap-0">
+                            <div class="flex justify-center items-center w-full">
+                                <div class="leslie-knope-img testy__img rounded-full"></div>
+                            </div>
+                            <div class="flex flex-col gap-6 sm:gap-2">
+                                <div class="testy__stars flex justify-center sm:justify-start">
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ex laudantium exercitationem quos maxime repellat libero, facilis dicta est, excepturi laboriosam facere recusandae debitis delectus in expedita voluptates explicabo maiores ea natus? Reiciendis?</p>
+                                    <p class="font-semibold">Leslie Knope 48, Pawnee</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="flex flex-col gap-6 py-10 px-8 rounded-lg bg-bcr-lighterblue sm:flex-row sm:justify-center sm:gap-0">
+                            <div class="flex justify-center items-center w-full">
+                                <div class="stanley-hudson-img testy__img rounded-full"></div>
+                            </div>
+                            <div class="flex flex-col gap-6 sm:gap-2">
+                                <div class="testy__stars flex justify-center sm:justify-start">
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--fill bg-bcr-warning"></div>
+                                    <div class="star-icon star--half bg-bcr-warning"></div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ex laudantium exercitationem quos maxime repellat libero, facilis dicta est, excepturi laboriosam facere recusandae debitis delectus in expedita voluptates explicabo maiores ea natus? Reiciendis?</p>
+                                    <p class="font-semibold">Stanley Hudson 72, Scranton</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testy__carousel-btn-container self-center flex justify-between sm:mt-6">
+                <button id="carousel-btn-prev" class="testy__carousel-btn flex justify-center items-center rounded-full border-1 border-bcr-dark" type="button">
+                    <div class="svg prev-icon bg-bcr-dark"></div>
+                </button>
+                <button id="carousel-btn-next" class="testy__carousel-btn flex justify-center items-center bg-bcr-limegreen rounded-full" type="button">
+                    <div class="svg next-icon bg-white"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta w-screen flex justify-center">
+        <div class="cta__content w-91prcnt bg-bcr-blue gap-8 flex flex-col justify-center items-center sm:w-81prcnt sm:gap-13">
+            <div class="flex flex-col gap-4 text-white justify-center w-full items-center">
+                <h2>Sewa Mobil di (Lokasimu) Sekarang!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis odio quo perspiciatis distinctio, quis fuga tempora labore ab neque?</p>    
+            </div>
+            <button type="button" class="button">Mulai Sewa Mobil</button>
+        </div>
+    </section>
+
+    <section class="faq w-screen flex justify-center ">
+        <div class="faq__content w-91prcnt flex flex-col justify-start items-center gap-6 sm:flex-row sm:gap-0 sm:w-81prcnt">
+            <div class="faq__head w-full flex flex-col items-center gap-4 sm:self-start sm:items-start">
+                <h2>Frequently Asked Questions</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>    
+            </div>
+            <div class="faq__accordion w-full flex flex-col justify-start gap-4">
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Apa saja syarat yang dibutuhkan?</button>
+                    <div class="panel px-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Berapa hari minimal sewa mobil lepas kunci?</button>
+                    <div class="panel px-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Berapa hari sebelumnya sebaiknya booking sewa mobil?</button>
+                    <div class="panel px-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Apakah ada biaya antar-jemput?</button>
+                    <div class="panel px-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+
+                <div>
+                    <button class="accordion w-full border-1 rounded-4px flex justify-between items-center px-6 py-4">Bagaimana jika terjadi kecelakaan?</button>
+                    <div class="panel px-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, porro aut repudiandae nemo deserunt labore voluptatem molestias soluta magni quo.</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-screen flex justify-center mb-25 md:mb-15">
+        <div id="footer__container" class="w-91prcnt flex flex-col gap-4 sm:w-81prcnt md:flex-row md:justify-between md:gap-0">
+            <div id="footer__address" class="flex flex-col gap-4 md:footer__23prcnt">
+                <p>Jalan Suroyo No.161, Mayangan Kota, Probolonggo 672000</p>
+                <p>binarcarrental@gmail.com</p>
+                <p>081-233-334-808</p>    
+            </div>
+            <ul id="footer__nav" class="flex flex-col gap-4">
+                <li>
+                    <a href="#">Our Services</a>
+                </li>
+                <li>
+                    <a href="#">Why Us</a>
+                </li>
+                <li>
+                    <a href="#">Testimonial</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+            </ul>
+            <div id="footer__socmed" class="flex flex-col gap-4 md:footer__23prcnt">
+                <p>Connect with us</p>
+                <div class="flex gap-4">
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="fb-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="ig-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="x-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="mail-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="twitch-icon icon--20px svg bg-white"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 md:footer__23prcnt">
+                <p>Copyright Binar 2024</p>
+                <div class="bcr-logo bg-bcr-blue"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public/scripts/sidenav.js"></script>
+    <script src="public/scripts/accordion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="public/scripts/carousel.js"></script>
+  </body>
+</html>

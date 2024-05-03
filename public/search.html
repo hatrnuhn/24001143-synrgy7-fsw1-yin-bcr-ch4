@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binar Car Rental</title>
+    <link rel="stylesheet" href="public/css/search.css">
+  </head>
+  <body>
+    <section class="hero w-full box-border bg-bcr-lighterblue flex flex-col justify-between overflow-x-clip sm:flex-row">
+        <nav class="hero__nav w-full flex justify-center items-end sm:absolute">
+            <div class="hero__nav-container flex items-center justify-between w-91prcnt sm:w-81prcnt">
+                <div class="bcr-logo bg-bcr-blue"></div>
+                <ul class="hero__menu-list hidden items-center h-full justify-end sm:flex">
+                    <li>
+                        <a href="#">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Why Us?</a>
+                    </li>
+                    <li>
+                        <a href="#">Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="button bg-bcr-limegreen self-start" type="button">Register</button>
+                        </a>
+                    </li>
+                </ul>
+                <button class="hero__nav-menu-icon sm:hidden" type="button" onclick="openNav()"></button>
+                <div id="hero__side-nav" class="fixed top-0 right-0 h-full w-0 z-10 flex flex-col gap-4 items-center bg-white sm:hidden">
+                    <h2 class="flex w-3/4 justify-between items-center mt-8">
+                        BCR
+                        <a href="javascript:void(0)" class="closebtn text-4xl" onclick="closeNav()">&times;</a>
+                    </h2>
+                    <ul class="flex w-3/4 flex-col gap-4">
+                        <li>
+                            <a href="#">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Why Us?</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button class="button bg-bcr-limegreen self-start" type="button">Register</button>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </nav>
+        <div class="hero__content flex flex-col justify-center items-center gap-4 mt-8 sm:items-start sm:justify-end sm:mt-24">
+            <div class="hero__text-container flex flex-col w-91prcnt gap-4">
+                <h1 class="w-full flex items-center sm:w-full">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+                <p class="w-full flex items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic architecto nostrum consequatur! Dicta error ipsam perferendis quos hic nostrum?</p>    
+            </div>    
+        </div>
+        <div class="hero__img-container mt-6 flex justify-center items-end sm:w-half sm:mt-24 sm:self-end">
+            <div class="hero__img-bg bg-bcr-blue flex justify-center">
+                <div class="hero__img-png self-end"></div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="search w-full flex justify-center lg:relative lg:-top-12">
+        <div action="" class="flex flex-col bg-white justify-between w-91prcnt gap-4 rounded-md shadow-search text-xs p-4 lg:flex-row lg:text-sm sm:w-81prcnt">
+            <div class="flex flex-col">
+                <label for="driver">Tipe Driver</label>
+                <select name="drivers" id="driver">
+                    <option value="" disabled selected hidden>Pilih Tipe Driver</option>
+                    <option value="yes">Dengan Sopir</option>
+                    <option value="no">Tanpa Sopir (Lepas Kunci)</option>
+                </select>
+            </div>
+            <div class="flex flex-col">
+                <label for="date">Tanggal</label>
+                <input type="date">
+            </div>
+            <div class="flex flex-col">
+                <label for="hours">Waktu Jemput/Ambil</label>
+                <input type="time">
+            </div>
+            <div class="flex flex-col">
+                <label for="seats">Jumlah Penumpang (optional)</label>
+                <select name="seats" id="seats">
+                    <option value="" disabled selected hidden>Jumlah Penumpang</option>
+                    <option value="coupe">1-2 Orang</option>
+                    <option value="small">2-4 Orang</option>
+                    <option value="medium">4-6 Orang</option>
+                    <option value="large">6+ Orang</option>
+                </select>
+            </div>
+            <div class="flex align-middle">
+                <button class="button bg-bcr-limegreen" onclick="searchCar()">Cari Mobil</button>
+            </div>    
+        </div>
+    </section>
+
+    <section class="result w-full flex justify-center">
+        <div class="w-91prcnt grid grid-cols-2 auto-rows-min md:grid-cols-3 lg:grid-cols-4 sm:w-81prcnt" id="placeholder">
+        </div>
+    </section>
+
+    <footer class="w-screen flex justify-center mb-25 md:mb-15">
+        <div id="footer__container" class="w-91prcnt flex flex-col gap-4 sm:w-81prcnt md:flex-row md:justify-between md:gap-0">
+            <div id="footer__address" class="flex flex-col gap-4 md:footer__23prcnt">
+                <p>Jalan Suroyo No.161, Mayangan Kota, Probolonggo 672000</p>
+                <p>binarcarrental@gmail.com</p>
+                <p>081-233-334-808</p>    
+            </div>
+            <ul id="footer__nav" class="flex flex-col gap-4">
+                <li>
+                    <a href="#">Our Services</a>
+                </li>
+                <li>
+                    <a href="#">Why Us</a>
+                </li>
+                <li>
+                    <a href="#">Testimonial</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+            </ul>
+            <div id="footer__socmed" class="flex flex-col gap-4 md:footer__23prcnt">
+                <p>Connect with us</p>
+                <div class="flex gap-4">
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="fb-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="ig-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="x-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="mail-icon icon--20px svg bg-white"></div>
+                    </a>
+
+                    <a href="#" class="socmed__icon bg-bcr-blue flex justify-center items-center rounded-full self-start">
+                        <div class="twitch-icon icon--20px svg bg-white"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 md:footer__23prcnt">
+                <p>Copyright Binar 2024</p>
+                <div class="bcr-logo bg-bcr-blue"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="public/scripts/sidenav.js"></script>
+    <script src="public/scripts/search.js"></script>
+  </body>
+</html>
